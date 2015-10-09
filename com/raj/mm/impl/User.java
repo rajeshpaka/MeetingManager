@@ -3,7 +3,7 @@ package com.raj.mm.impl;
 public class User
 {
 	private String _name;
-	private String _pmfkey;
+	private String _uniqueKey;
 	
 	public String getName()
 	{
@@ -15,16 +15,16 @@ public class User
 	}
 	public String getPmfkey()
 	{
-		return _pmfkey;
+		return _uniqueKey;
 	}
 	public void setPmfkey(String pmfkey)
 	{
-		this._pmfkey = pmfkey;
+		this._uniqueKey = pmfkey;
 	}
 	
 	public User(String name_, String pmfkey_)
 	{
 		this._name = name_;
-		this._pmfkey = pmfkey_;
+		this._uniqueKey = pmfkey_;
 	}
 }
